@@ -3,30 +3,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 15vh;
 }
 .LogoHeader{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 20%;
-}
-h1{
-    font-size: 130%;
-    color: #fff;
+    h1{
+        font-size: 130%;
+        color: #fff;
+    }
 }
 .navHeader{
     width: 30%;
-}
-.ul{
-    display: flex;
+ul{
+        display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
-}
+  }
 .Link{
-    color: #fff;
+        color: #fff;
         font-size: 20px;
         text-decoration: none;
+    }
 }
 .barraDeBusca{
     border: solid #fff;
@@ -53,4 +54,19 @@ h1{
  }
 }
 
+@media (max-width: 768px){
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logoHeader {
+        width: 90%;
+    }
+    .navHeader {
+        width: 95%;
+    }
+    .barraDeBusca{
+        display: none;
+    }
+}
 
